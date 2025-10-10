@@ -11,7 +11,7 @@ export default function JogaZeMna() {
   return (
     <section
       id="joga"
-      className="min-h-screen flex items-center bg-[#D4BFB0] py-20 snap-start snap-always"
+      className="min-h-screen flex items-center bg-[#D4BFB0] py-20 md:snap-start md:snap-always"
     >
       <div className="container mx-auto px-8">
         <h2 className="font-serif text-6xl lg:text-7xl tracking-wide text-white text-center mb-16">

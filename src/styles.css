@@ -21,8 +21,16 @@ body {
 
 /* Snap scroll container - only for main landing page */
 .snap-scroll-container {
-  height: 100vh;
-  overflow-y: scroll;
+  /* Mobile: normal scrolling */
+  overflow-y: auto;
+}
+
+/* Desktop: snap scrolling with fixed height */
+@media (min-width: 768px) {
+  .snap-scroll-container {
+    height: 100vh;
+    overflow-y: scroll;
+  }
 }
 
 .font-serif {

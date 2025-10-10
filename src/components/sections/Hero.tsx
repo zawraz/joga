@@ -2,7 +2,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex flex-col items-center justify-center bg-gray-900 text-white snap-start snap-always"
+      className="relative min-h-screen flex flex-col items-center justify-center bg-gray-900 text-white md:snap-start md:snap-always"
       style={{
         backgroundImage:
           'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=1920&h=1080&fit=crop)',
@@ -12,20 +12,20 @@ export default function Hero() {
       }}
     >
       <div className="text-center px-4">
-        <p className="font-serif text-lg md:text-xl tracking-[0.3em] mb-8 opacity-90">
+        <p className="font-serif text-sm md:text-lg lg:text-xl tracking-[0.2em] md:tracking-[0.3em] mb-6 md:mb-8 opacity-90">
           SIŁA, ELASTYCZNOŚĆ, ZDROWIE
         </p>
-        <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl tracking-wider mb-12">
+        <h1 className="font-serif text-4xl md:text-7xl lg:text-8xl tracking-wide md:tracking-wider mb-8 md:mb-12">
           JOGA
           <br />
           MARTA SAWRAS
         </h1>
         <div className="flex justify-center">
           <svg
-            width="80"
-            height="80"
+            width="60"
+            height="60"
             viewBox="0 0 100 100"
-            className="opacity-60"
+            className="opacity-60 md:w-20 md:h-20"
             aria-label="Yoga icon"
           >
             <title>Yoga icon</title>
@@ -38,8 +38,8 @@ export default function Hero() {
       </div>
       <button
         type="button"
-        onClick={() => document.getElementById('bio')?.scrollIntoView({ behavior: 'smooth' })}
-        className="absolute bottom-12 left-1/2 -translate-x-1/2 px-12 py-4 border-2 border-white rounded-full font-serif tracking-[0.2em] text-sm hover:bg-white hover:text-gray-900 transition-all duration-300"
+        onClick={() => document.getElementById('grafik')?.scrollIntoView({ behavior: 'smooth' })}
+        className="absolute bottom-8 md:bottom-12 left-1/2 -translate-x-1/2 px-8 md:px-12 py-3 md:py-4 border-2 border-white rounded-full font-serif tracking-[0.2em] text-xs md:text-sm hover:bg-white hover:text-gray-900 transition-all duration-300"
       >
         GRAFIK
       </button>

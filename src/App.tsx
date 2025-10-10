@@ -7,7 +7,7 @@ import Kontakt from './components/sections/Kontakt';
 
 function App() {
   return (
-    <div className="relative snap-scroll-container snap-y snap-mandatory">
+    <div className="relative snap-scroll-container md:snap-y md:snap-mandatory">
       <Navigation />
       <Hero />
       <Bio />

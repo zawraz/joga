@@ -32,13 +32,13 @@ export default function Navigation() {
   };
 
   return (
-    <nav className="fixed top-8 right-8 z-50 flex flex-col gap-3 text-right">
+    <nav className="fixed top-4 right-4 md:top-8 md:right-8 z-50 flex flex-col gap-3 text-right">
       <button
         type="button"
         onClick={() => scrollToSection('home')}
-        className={`font-serif text-sm tracking-[0.3em] transition-all duration-300 ${
+        className={`font-serif text-xs md:text-sm tracking-[0.3em] transition-all duration-300 ${
           activeSection === 'home'
-            ? 'text-white text-base font-semibold'
+            ? 'text-white text-sm md:text-base font-semibold'
             : 'text-white/70 hover:text-white'
         }`}
       >

@@ -4,7 +4,7 @@ export default function Bio() {
   return (
     <section
       id="bio"
-      className="min-h-screen flex items-center bg-[#F5EDE4] py-20 snap-start snap-always"
+      className="min-h-screen flex items-center bg-[#F5EDE4] py-20 md:snap-start md:snap-always"
     >
       <div className="container mx-auto px-8 lg:px-16">
         <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
