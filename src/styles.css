@@ -8,8 +8,6 @@
 
 html {
   scroll-behavior: smooth;
-  overflow: hidden;
-  height: 100%;
 }
 
 body {
@@ -19,12 +17,12 @@ body {
     "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  height: 100%;
-  overflow: hidden;
 }
 
-#app {
-  height: 100%;
+/* Snap scroll container - only for main landing page */
+.snap-scroll-container {
+  height: 100vh;
+  overflow-y: scroll;
 }
 
 .font-serif {
