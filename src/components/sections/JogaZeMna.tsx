@@ -11,13 +11,13 @@ export default function JogaZeMna() {
   return (
     <section
       id="joga"
-      className="min-h-screen flex items-center bg-[#D4BFB0] py-20 md:snap-start md:snap-always"
+      className="min-h-screen flex items-center bg-[#D4BFB0] py-12 md:py-20 md:snap-start md:snap-always"
     >
-      <div className="container mx-auto px-8">
-        <h2 className="font-serif text-6xl lg:text-7xl tracking-wide text-white text-center mb-16">
+      <div className="container mx-auto px-6 md:px-8">
+        <h2 className="font-serif text-4xl md:text-6xl lg:text-7xl tracking-wide text-white text-center mb-8 md:mb-16">
           JOGA ZE MNĄ
         </h2>
-        <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
+        <div className="grid md:grid-cols-3 gap-6 md:gap-8 lg:gap-12">
           {/* GRAFIK */}
           <div
             className="relative group cursor-pointer"
@@ -32,7 +32,7 @@ export default function JogaZeMna() {
             tabIndex={0}
             aria-label="Przejdź do grafiku zajęć"
           >
-            <div className="relative overflow-hidden rounded-lg h-96">
+            <div className="relative overflow-hidden rounded-lg h-64 md:h-96">
               <img
                 src="https://images.unsplash.com/photo-1599447332316-5f6c8f31e9d5?w=600&h=800&fit=crop"
                 alt="Grafik zajęć"
@@ -40,14 +40,14 @@ export default function JogaZeMna() {
               />
               <div className="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition-colors duration-300" />
             </div>
-            <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 px-12 py-4 bg-[#C4A587] rounded-full font-serif tracking-[0.2em] text-sm text-white group-hover:bg-[#B39475] transition-all duration-300 shadow-lg pointer-events-none">
+            <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 px-5 md:px-10 py-1.5 md:py-4 bg-[#C4A587] rounded-full font-serif tracking-[0.05em] md:tracking-[0.2em] text-xs md:text-sm text-white group-hover:bg-[#B39475] transition-all duration-300 shadow-lg pointer-events-none">
               GRAFIK
             </span>
           </div>
 
           {/* INDYWIDUALNE */}
           <Link to="/indywidualne" className="relative group">
-            <div className="relative overflow-hidden rounded-lg h-96">
+            <div className="relative overflow-hidden rounded-lg h-64 md:h-96">
               <img
                 src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=600&h=800&fit=crop"
                 alt="Zajęcia indywidualne"
@@ -55,14 +55,14 @@ export default function JogaZeMna() {
               />
               <div className="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition-colors duration-300" />
             </div>
-            <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 px-8 py-4 bg-[#C4A587] rounded-full font-serif tracking-[0.2em] text-sm text-white group-hover:bg-[#B39475] transition-all duration-300 shadow-lg whitespace-nowrap pointer-events-none">
+            <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 px-5 md:px-10 py-1.5 md:py-4 bg-[#C4A587] rounded-full font-serif tracking-[0.05em] md:tracking-[0.2em] text-xs md:text-sm text-white group-hover:bg-[#B39475] transition-all duration-300 shadow-lg whitespace-nowrap pointer-events-none">
               INDYWIDUALNE
             </span>
           </Link>
 
           {/* ONLINE */}
           <Link to="/online" className="relative group">
-            <div className="relative overflow-hidden rounded-lg h-96">
+            <div className="relative overflow-hidden rounded-lg h-64 md:h-96">
               <img
                 src="https://images.unsplash.com/photo-1588286840104-8957b019727f?w=600&h=800&fit=crop"
                 alt="Zajęcia online"
@@ -70,7 +70,7 @@ export default function JogaZeMna() {
               />
               <div className="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition-colors duration-300" />
             </div>
-            <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 px-12 py-4 bg-[#C4A587] rounded-full font-serif tracking-[0.2em] text-sm text-white group-hover:bg-[#B39475] transition-all duration-300 shadow-lg pointer-events-none">
+            <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 px-5 md:px-10 py-1.5 md:py-4 bg-[#C4A587] rounded-full font-serif tracking-[0.05em] md:tracking-[0.2em] text-xs md:text-sm text-white group-hover:bg-[#B39475] transition-all duration-300 shadow-lg pointer-events-none">
               ONLINE
             </span>
           </Link>
