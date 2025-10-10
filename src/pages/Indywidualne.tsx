@@ -8,6 +8,14 @@ export default function Indywidualne() {
         <div className="container mx-auto px-8 py-6">
           <Link
             to="/"
+            onClick={() => {
+              setTimeout(() => {
+                const element = document.getElementById('joga');
+                if (element) {
+                  element.scrollIntoView({ behavior: 'smooth' });
+                }
+              }, 100);
+            }}
             className="inline-flex items-center gap-2 text-[#5C4033] hover:text-[#8B6F47] transition-colors"
           >
             <ArrowLeft size={20} />
