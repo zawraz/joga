@@ -8,6 +8,8 @@
 
 html {
   scroll-behavior: smooth;
+  overflow: hidden;
+  height: 100%;
 }
 
 body {
@@ -17,10 +19,41 @@ body {
     "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  overflow: hidden;
+}
+
+#app {
+  height: 100%;
 }
 
 .font-serif {
   font-family: "Playfair Display", serif;
+}
+
+/* Enhance scroll snap behavior */
+.snap-y {
+  scroll-snap-type: y mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(92, 64, 51, 0.5) transparent;
+}
+
+.snap-y::-webkit-scrollbar {
+  width: 8px;
+}
+
+.snap-y::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.snap-y::-webkit-scrollbar-thumb {
+  background-color: rgba(92, 64, 51, 0.5);
+  border-radius: 4px;
+}
+
+.snap-y::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(92, 64, 51, 0.7);
 }
 
 code {

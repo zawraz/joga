@@ -27,7 +27,10 @@ export default function Grafik() {
   ];
 
   return (
-    <section id="grafik" className="min-h-screen flex items-center bg-[#F5EDE4] py-20">
+    <section
+      id="grafik"
+      className="min-h-screen flex items-center bg-[#F5EDE4] py-20 snap-start snap-always"
+    >
       <div className="container mx-auto px-8 lg:px-16">
         <h2 className="font-serif text-6xl lg:text-7xl tracking-wide text-[#5C4033] text-center mb-16">
           GRAFIK

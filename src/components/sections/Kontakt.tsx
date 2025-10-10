@@ -4,7 +4,7 @@ export default function Kontakt() {
   return (
     <section
       id="kontakt"
-      className="min-h-screen flex items-center bg-white text-[#5C4033] py-20"
+      className="min-h-screen flex items-center bg-white text-[#5C4033] py-20 snap-start snap-always"
       style={{
         backgroundImage:
           'linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url(https://images.unsplash.com/photo-1545389336-cf090694435e?w=1920&h=1080&fit=crop)',

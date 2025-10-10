@@ -2,7 +2,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex flex-col items-center justify-center bg-gray-900 text-white"
+      className="relative min-h-screen flex flex-col items-center justify-center bg-gray-900 text-white snap-start snap-always"
       style={{
         backgroundImage:
           'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=1920&h=1080&fit=crop)',
