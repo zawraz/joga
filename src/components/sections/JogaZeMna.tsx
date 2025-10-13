@@ -30,18 +30,18 @@ export default function JogaZeMna() {
             }}
             role="button"
             tabIndex={0}
-            aria-label="Przejdź do grafiku zajęć"
+            aria-label="Przejdź do zajęć grupowych"
           >
             <div className="relative overflow-hidden rounded-lg h-64 md:h-96">
               <img
-                src="https://images.unsplash.com/photo-1599447332316-5f6c8f31e9d5?w=600&h=800&fit=crop"
-                alt="Grafik zajęć"
+                src="https://images.unsplash.com/group-of-people-raising-their-hands-GvF7RkA-E9Q?w=600&h=800&fit=crop"
+                alt="Zajęcia grupowe"
                 className="w-full h-full object-cover filter grayscale group-hover:scale-105 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition-colors duration-300" />
             </div>
-            <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 px-5 md:px-10 py-1.5 md:py-4 bg-[#C4A587] rounded-full font-serif tracking-[0.05em] md:tracking-[0.2em] text-xs md:text-sm text-white group-hover:bg-[#B39475] transition-all duration-300 shadow-lg pointer-events-none">
-              GRAFIK
+            <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 px-5 md:px-10 py-1.5 md:py-4 bg-[#C4A587] rounded-full font-serif tracking-[0.05em] md:tracking-[0.2em] text-xs md:text-sm text-white group-hover:bg-[#B39475] transition-all duration-300 shadow-lg whitespace-nowrap pointer-events-none">
+              ZAJĘCIA GRUPOWE
             </span>
           </div>
 
