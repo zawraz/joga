@@ -11,9 +11,12 @@ import ReactDOM from 'react-dom/client';
 import './styles.css';
 
 import App from './App.tsx';
+import Business from './pages/Business.tsx';
 import Indywidualne from './pages/Indywidualne.tsx';
 import Online from './pages/Online.tsx';
+import Retreats from './pages/Retreats.tsx';
 import Szczegoly from './pages/Szczegoly.tsx';
+import Workshops from './pages/Workshops.tsx';
 import reportWebVitals from './reportWebVitals.ts';
 
 const rootRoute = createRootRoute({
@@ -48,11 +51,32 @@ const onlineRoute = createRoute({
   component: Online,
 });
 
+const workshopsRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: '/workshops',
+  component: Workshops,
+});
+
+const retreatsRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: '/retreats',
+  component: Retreats,
+});
+
+const businessRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: '/business',
+  component: Business,
+});
+
 const routeTree = rootRoute.addChildren([
   indexRoute,
   szczegolyRoute,
   indywidualneRoute,
   onlineRoute,
+  workshopsRoute,
+  retreatsRoute,
+  businessRoute,
 ]);
 
 const router = createRouter({
