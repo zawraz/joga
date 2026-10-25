@@ -1,0 +1,156 @@
+/* Marta Joga — generated from tokens.json */
+:root,
+[data-theme="light"] {
+  --blush-50: #ffefec; /* Page background. The blush ground of the Cennik board; in dark, a deep green-black. */
+  --cream-50: #fcf8f4; /* Raised surface: cards, contact panel, online slots in the schedule, nav sheet. */
+  --sage-100: #d4e2d7; /* Quiet fill: empty schedule cells, Tag background, dividers that need weight. */
+  --sage-200: #afceb6; /* Brand light green (Jasnozielony). Price tier SALA, large soft fields. Text on it: on-sage. */
+  --sage-300: #82ae8c; /* Brand dark green (Ciemnozielony). Price tier ONLINE, cover blocks. Text on it: on-sage. */
+  --mint-300: #a6d7b1; /* Gentle class (Grupa łagodna) slot fill in the schedule. Text on it: on-sage. */
+  --sage-400: #79ac84; /* General class (Grupa ogólna) slot fill in the schedule. Text on it: on-sage. */
+  --leaf-500: #53825d; /* Accent green from the brand boards. Display headings (26px+ only: 3.99:1 on blush-50) on blush-50 and cream-50. In dark it lightens to stay legible. */
+  --leaf-600: #477150; /* Price tier SALA + ONLINE fill. Darkened from the board's #53825d so on-forest text passes 4.5:1. */
+  --accent-text: #436e4d; /* Small accent text: eyebrows, links, day names, on blush-50 and cream-50. */
+  --forest-600: #275c33; /* Intensive class (Grupa intensywna) slot fill. Text on it: on-forest. */
+  --forest-700: #294a30; /* Deepest green. Price tier INDYWIDUALNE fill, the hamburger and wordmark in light. */
+  --glass: rgba(
+    71,
+    113,
+    80,
+    0.92
+  ); /* Translucent green panel over black-and-white photos (PhotoPanel). Deeper than the Instagram boards' mint so on-forest text reads. Text on it: on-forest. */
+  --on-sage: #1b3321; /* Text on the light-green fills: sage-200, sage-300, mint-300, sage-400 (5.2:1 or better). */
+  --ink: #1d2b21; /* Body text on blush-50, cream-50 and sage-100. */
+  --ink-muted: #4a5c4f; /* Secondary text (places, durations, captions) on blush-50, cream-50 and sage-100. */
+  --on-forest: #fcf8f4; /* Text on forest-600, forest-700, leaf-600 and glass. */
+  --line: #c6d6c9; /* Decorative hairlines and card borders on blush-50 and cream-50. */
+  --control-border: #57705c; /* Borders of secondary buttons and copy buttons; at least 4.5:1 on blush-50 and cream-50 in both themes (light 4.85:1 / 5.13:1). */
+  --focus: #294a30; /* Focus ring: 2px solid, 2px offset, on every surface. */
+  --primary: var(--forest-700); /* Primary action fill (Button primary, menu button). */
+  --on-primary: var(--cream-50); /* Text on primary. */
+  --heading: var(--leaf-500); /* Display headings (26px+) on blush-50 and cream-50. */
+  --shadow-sheet: 0 -8px 32px rgba(41, 74, 48, 0.18); /* Only the open nav sheet. Everything else is flat. */
+}
+[data-theme="dark"] {
+  --blush-50: #121a14;
+  --cream-50: #1a241d;
+  --sage-100: #243229;
+  --sage-200: #afceb6;
+  --sage-300: #82ae8c;
+  --mint-300: #a6d7b1;
+  --sage-400: #79ac84;
+  --leaf-500: #8fbf99;
+  --leaf-600: #477150;
+  --accent-text: #8fbf99;
+  --forest-600: #275c33;
+  --forest-700: #294a30;
+  --glass: rgba(41, 74, 48, 0.9);
+  --on-sage: #1b3321;
+  --ink: #e8efe9;
+  --ink-muted: #a9bbad;
+  --on-forest: #fcf8f4;
+  --line: #34463a;
+  --control-border: #7f9f86;
+  --focus: #c9e3cf;
+  --primary: var(--sage-200);
+  --on-primary: var(--forest-700);
+  --heading: var(--leaf-500);
+  --shadow-sheet: 0 -8px 32px rgba(0, 0, 0, 0.5);
+}
+:root {
+  --space-1: 4px; /* Icon to text, tag inner vertical. */
+  --space-2: 8px; /* Between label and value, tight stacks. */
+  --space-3: 12px; /* Price row gap, tag horizontal padding. */
+  --space-4: 16px; /* Card padding on phones; minimum page gutter. */
+  --space-5: 20px; /* Page gutter on phones (inside a max() with the safe-area inset). */
+  --space-6: 24px; /* Card padding from 640px; gap between cards. */
+  --space-8: 32px; /* Heading to content. */
+  --space-12: 48px; /* Between sections on phones. */
+  --space-16: 64px; /* Between sections from 640px. */
+  --radius-none: 0px; /* Price cards and schedule cells: the brand's flat, square blocks. */
+  --radius-sm: 6px; /* Tags and copy buttons. */
+  --radius-panel: 24px; /* Glass panel over photos, photo frames, nav sheet top corners. */
+  --radius-pill: 999px; /* Buttons. */
+  --tap-min: 48px; /* Minimum height of every tappable control. */
+  --content-max: 640px; /* Max width of a reading column; cards stack in one column below it. */
+  --bp-sm: 640px; /* First breakpoint: two-column price grid, larger display sizes. */
+  --bp-md: 960px; /* Second breakpoint: schedule as a week grid, inline nav. */
+  --font-display: "Tenor Sans", "Gill Sans", "Optima", "Segoe UI", sans-serif;
+  --font-sans: "Prompt", "Segoe UI", system-ui, sans-serif;
+  --text-display-xl:
+    400 44px / 48px var(--font-display); /* Page or hero title, uppercase. 56px/60px from 640px up. */
+  --text-display-lg:
+    400 34px / 40px var(--font-display); /* Section titles. 40px/46px from 640px up. */
+  --text-display-md:
+    400 26px / 32px var(--font-display); /* Price card titles, PhotoPanel titles, card names. */
+  --text-lead: 300 18px / 28px var(--font-sans); /* Intro paragraph under a section title. */
+  --text-body: 400 16px / 26px var(--font-sans); /* Running text. Never below 16px on phones. */
+  --text-body-sm: 400 14px / 22px var(--font-sans); /* Places, durations, secondary lines. */
+  --text-label: 500 16px / 20px var(--font-sans); /* Buttons, nav items, price row labels. */
+  --text-price: 600 18px / 24px var(--font-sans); /* Prices and times; tabular numerals. */
+  --text-eyebrow:
+    600 12px / 16px var(--font-sans); /* Uppercase day names, section kickers, tags. */
+}
+.display-xl {
+  font-family: var(--font-display);
+  font-size: 44px;
+  line-height: 48px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+.display-lg {
+  font-family: var(--font-display);
+  font-size: 34px;
+  line-height: 40px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+.display-md {
+  font-family: var(--font-display);
+  font-size: 26px;
+  line-height: 32px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+}
+.lead {
+  font-family: var(--font-sans);
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 300;
+  letter-spacing: 0;
+}
+.body {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.body-sm {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.label {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+.price {
+  font-family: var(--font-sans);
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+.eyebrow {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+}

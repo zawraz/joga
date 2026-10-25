@@ -1,0 +1,10 @@
+# Install scripts pnpm may run (pnpm 10+ blocks unlisted ones).
+allowBuilds:
+  # Vite's bundler: postinstall verifies and links the platform binary.
+  esbuild: true
+  # Tailwind v4 engine: postinstall picks the native binary for the platform (also on Netlify).
+  '@tailwindcss/oxide': true
+  # Pulled in by @netlify/vite-plugin for local dev only; prebuilt binaries ship as
+  # optional dependencies, so their build-from-source fallbacks are not needed.
+  '@parcel/watcher': false
+  sharp: false

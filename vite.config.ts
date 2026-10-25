@@ -1,3 +1,4 @@
+/// <reference types="vitest/config" />
 import { resolve } from 'node:path';
 import netlify from '@netlify/vite-plugin-tanstack-start';
 import tailwindcss from '@tailwindcss/vite';
