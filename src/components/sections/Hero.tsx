@@ -1,48 +1,33 @@
+import { Button, SectionHeading } from '../ds/MartaJoga';
+
 export default function Hero() {
   return (
-    <section
-      id="home"
-      className="relative min-h-screen flex flex-col items-center justify-center bg-gray-900 text-white md:snap-start md:snap-always"
-      style={{
-        backgroundImage:
-          'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=1920&h=1080&fit=crop)',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundAttachment: 'fixed',
-      }}
-    >
-      <div className="text-center px-4">
-        <p className="font-serif text-sm md:text-lg lg:text-xl tracking-[0.2em] md:tracking-[0.3em] mb-6 md:mb-8 opacity-90">
-          SIŁA, ELASTYCZNOŚĆ, ZDROWIE
-        </p>
-        <h1 className="font-serif text-4xl md:text-7xl lg:text-8xl tracking-wide md:tracking-wider mb-8 md:mb-12">
-          JOGA
-          <br />
-          MARTA SAWRAS
-        </h1>
-        <div className="flex justify-center">
-          <svg
-            width="60"
-            height="60"
-            viewBox="0 0 100 100"
-            className="opacity-60 md:w-20 md:h-20"
-            aria-label="Yoga icon"
-          >
-            <title>Yoga icon</title>
-            <circle cx="50" cy="50" r="35" stroke="white" strokeWidth="2" fill="none" />
-            <circle cx="50" cy="35" r="8" fill="white" />
-            <path d="M 50 43 Q 40 50, 35 60" stroke="white" strokeWidth="2" fill="none" />
-            <path d="M 50 43 Q 60 50, 65 60" stroke="white" strokeWidth="2" fill="none" />
-          </svg>
+    <section id="home" className="mj-band">
+      <div className="mj-container mj-split">
+        <div className="mj-stack">
+          <SectionHeading
+            level={1}
+            size="xl"
+            eyebrow="Hatha joga według B.K.S. Iyengara"
+            title="Marta Sawras"
+            intro="Zajęcia grupowe w Szczepanowie i Środzie Śląskiej, spotkania indywidualne, joga online i warsztaty."
+          />
+          <div className="mj-actions">
+            <Button href="#kontakt" block>
+              Zapisz się na zajęcia
+            </Button>
+            <Button href="#grafik" variant="secondary" block>
+              Zobacz grafik
+            </Button>
+          </div>
         </div>
+        <figure className="mj-photo">
+          <img
+            src="/photos/marta-standing.jpg"
+            alt="Marta w pozycji stojącej z nogą uniesioną na drążku, przy przeszklonej ścianie studia"
+          />
+        </figure>
       </div>
-      <button
-        type="button"
-        onClick={() => document.getElementById('grafik')?.scrollIntoView({ behavior: 'smooth' })}
-        className="absolute bottom-8 md:bottom-12 left-1/2 -translate-x-1/2 px-8 md:px-12 py-3 md:py-4 border-2 border-white rounded-full font-serif tracking-[0.2em] text-xs md:text-sm hover:bg-white hover:text-gray-900 transition-all duration-300"
-      >
-        GRAFIK
-      </button>
     </section>
   );
 }

@@ -1,6 +1,13 @@
 [build]
   command = "vite build"
-  dir = "dist/client"
+  publish = "dist"
 [dev]
   command = "vite dev"
   port = 3000
+
+# Single-page app: serve the app for client-side routes such as /szczegoly.
+# Existing files (assets, photos) are still served first.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
