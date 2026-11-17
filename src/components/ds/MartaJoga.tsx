@@ -136,7 +136,7 @@ export type ScheduleSlot = {
   time: string;
   name: string;
   place?: string;
-  kind: 'ogolna' | 'lagodna' | 'intensywna' | 'online';
+  kind: 'ogolna' | 'lagodna' | 'intensywna' | 'piatkowa' | 'online';
 };
 export type ScheduleDay = { day: string; slots: ScheduleSlot[] };
 
@@ -169,7 +169,7 @@ export function ClassCard({
   children,
 }: {
   name: string;
-  kind?: 'ogolna' | 'lagodna' | 'intensywna' | 'kurs';
+  kind?: 'ogolna' | 'lagodna' | 'intensywna' | 'piatkowa' | 'poglebione';
   meta?: string;
   level?: string;
   children: ReactNode;

@@ -4,7 +4,12 @@ const schedule: ScheduleDay[] = [
   {
     day: 'Poniedziałek',
     slots: [
-      { time: '20:15', name: 'Joga online', place: 'Google Meet · Wzmocnienie', kind: 'online' },
+      {
+        time: '20:00',
+        name: 'Joga ogólna',
+        place: 'Sala fitness, Średzki Park Wodny',
+        kind: 'ogolna',
+      },
     ],
   },
   {
@@ -12,16 +17,26 @@ const schedule: ScheduleDay[] = [
     slots: [
       { time: '18:00', name: 'Joga łagodna', place: 'Świetlica Szczepanów', kind: 'lagodna' },
       { time: '19:00', name: 'Joga intensywna', place: 'Świetlica Szczepanów', kind: 'intensywna' },
-      { time: '20:15', name: 'Joga online', place: 'Google Meet · Mobility', kind: 'online' },
+      { time: '20:00', name: 'Joga online', place: 'Google Meet', kind: 'online' },
     ],
   },
   {
     day: 'Czwartek',
-    slots: [{ time: '20:00', name: 'Joga ogólna', place: 'Basen, Środa Śląska', kind: 'ogolna' }],
+    slots: [
+      {
+        time: '19:00',
+        name: 'Joga ogólna',
+        place: 'Sala fitness, Średzki Park Wodny',
+        kind: 'ogolna',
+      },
+    ],
   },
   {
     day: 'Piątek',
-    slots: [{ time: '18:00', name: 'Joga ogólna', place: 'Sala SP Szczepanów', kind: 'ogolna' }],
+    slots: [
+      { time: '18:00', name: 'Joga piątkowa', place: 'Sala SP Szczepanów', kind: 'piatkowa' },
+      { time: '20:00', name: 'Joga online', place: 'Google Meet', kind: 'online' },
+    ],
   },
 ];
 
@@ -32,7 +47,7 @@ export default function Grafik() {
         <SectionHeading
           eyebrow="Sezon 2026/2027"
           title="Grafik"
-          intro="Każde zajęcia trwają ok. 60 minut."
+          intro="Zajęcia trwają ok. 60 minut, grupa piątkowa 75 minut."
         />
         <Schedule days={schedule} />
       </div>

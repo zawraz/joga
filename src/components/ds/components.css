@@ -346,6 +346,10 @@ body {
   background: var(--forest-600);
   color: var(--on-forest);
 }
+.mj-slot-piatkowa {
+  background: var(--plum-500);
+  color: var(--on-forest);
+}
 .mj-slot-online {
   background: var(--cream-50);
   color: var(--ink);
@@ -419,7 +423,10 @@ body {
 .mj-class-intensywna {
   --mj-swatch: var(--forest-600);
 }
-.mj-class-kurs {
+.mj-class-piatkowa {
+  --mj-swatch: var(--plum-500);
+}
+.mj-class-poglebione {
   --mj-swatch: var(--leaf-600);
 }
 

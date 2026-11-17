@@ -10,7 +10,7 @@ export default function Online() {
             title="Joga online"
             intro="Zajęcia na żywo to więcej niż odtwarzanie nagrania. To regularna, świadoma praktyka, w której otrzymujesz wskazówki, rozwijasz swoje umiejętności i budujesz coraz lepszą relację ze swoim ciałem."
           />
-          <p className="mj-note">Poniedziałki 20:15 Wzmocnienie · Środy 20:15 Mobility · 60 min</p>
+          <p className="mj-note">Środy i piątki 20:00 · 60 min</p>
         </div>
         <div className="mj-stack">
           <Steps

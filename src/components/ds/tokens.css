@@ -12,6 +12,7 @@
   --leaf-600: #477150; /* Price tier SALA + ONLINE fill. Darkened from the board's #53825d so on-forest text passes 4.5:1. */
   --accent-text: #436e4d; /* Small accent text: eyebrows, links, day names, on blush-50 and cream-50. */
   --forest-600: #275c33; /* Intensive class (Grupa intensywna) slot fill. Text on it: on-forest. */
+  --plum-500: #8e5b8a; /* Friday class (Grupa piątkowa) slot fill, from the schedule board's purple, darkened so on-forest text passes 4.5:1. Text on it: on-forest. */
   --forest-700: #294a30; /* Deepest green. Price tier INDYWIDUALNE fill, the hamburger and wordmark in light. */
   --glass: rgba(
     71,
@@ -43,6 +44,7 @@
   --leaf-600: #477150;
   --accent-text: #8fbf99;
   --forest-600: #275c33;
+  --plum-500: #8e5b8a;
   --forest-700: #294a30;
   --glass: rgba(41, 74, 48, 0.9);
   --on-sage: #1b3321;

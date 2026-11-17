@@ -90,30 +90,38 @@ export default function Szczegoly() {
 
         <section className="mj-band">
           <div className="mj-container">
-            <SectionHeading title="Moja filozofia nauczania" />
-            <div className="mj-cards">
-              <div className="mj-prose">
-                <h3 className="mj-subtitle">Precyzja i bezpieczeństwo</h3>
-                <p>Każda asana wykonywana jest z pełną świadomością ciała i jego możliwości.</p>
-              </div>
-              <div className="mj-prose">
-                <h3 className="mj-subtitle">Harmonia</h3>
-                <p>
-                  Oddech, ruch i umysł. Joga to nie tylko ciało, ale całościowe podejście do
-                  zdrowia.
-                </p>
-              </div>
-              <div className="mj-prose">
-                <h3 className="mj-subtitle">Metodyczne podejście</h3>
-                <p>
-                  Zaplanowane konstruowanie sekwencji, które gwarantuje rozwój siły, elastyczności i
-                  świadomości ruchu.
-                </p>
-              </div>
-              <div className="mj-prose">
-                <h3 className="mj-subtitle">Aktualna wiedza</h3>
-                <p>Z zakresu anatomii, filozofii, asan, oddechu i psychosomatyki.</p>
-              </div>
+            <SectionHeading title="Jaka jest joga, którą prowadzę" />
+            <div className="mj-prose">
+              <p>
+                Hatha z sanskrytu składa się z dwóch członów: HA (słońce, energia męska, aktywność)
+                oraz THA (księżyc, energia żeńska, wyciszenie). Jest jednym z wielu stylów jogi,
+                bardzo klasycznym, bazującym na starożytnych traktatach filozoficznych
+                (Hathajogapradipika). Styl zaproponowany przez B.K.S. Iyengara, jednego z
+                największych autorytetów hathajogi, jest precyzyjną pracą z ciałem i oddechem, co
+                przekłada się na wyciszenie mentalne.
+              </p>
+              <p>
+                Dokładnie zaplanowany cykl pracy z grupami asan według miesiąca pozwala na
+                systematyczne poszerzanie świadomości ciała w pracy z asanami i oddechem.
+                Wprowadzanie asan w sposób ewolucyjny, to znaczy od najłatwiejszej do najtrudniejszej,
+                pozwala na lecznicze działanie jogi i unikanie przeciążeń. Systematyczne zwiększanie
+                wytrzymałości i mobilności ciała sprawia, że czujemy się zdrowsi.
+              </p>
+              <p>
+                Każde zajęcia składają się z części koncentracyjnej, praktyki asan oraz relaksu. W
+                ostatnim tygodniu skupiamy się na regeneracji ciała, pranayamie i medytacji.
+                Wprowadzam wątki filozoficzne w ramach ciekawostek, bez doktryn i narzucania swoich
+                przekonań. Dbam, by zajęcia były pełne szacunku, skupienia, uważności, akceptacji i
+                radości.
+              </p>
+              <p>
+                Cieszę się na każdą możliwość dzielenia się jogą i przekazem jej mądrości zapisanej w
+                filozofii.
+              </p>
+              <p>
+                Niezwykle dbam o rzetelność warsztatu, dlatego nieustannie się doszkalam, zwiększając
+                swoje kompetencje u niezwykle utalentowanych i doświadczonych nauczycieli.
+              </p>
             </div>
           </div>
         </section>
